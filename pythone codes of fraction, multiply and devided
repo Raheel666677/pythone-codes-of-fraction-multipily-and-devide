@@ -1,0 +1,24 @@
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+result_factorial = factorial(78)
+print(f"Factorial of 78 is {result_factorial}")
+
+def multiply(x, y):
+    return x * y
+
+result_multiply = multiply(6, 7)
+print(f"The product of 6 and 7 is {result_multiply}")
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        print("Error: Cannot divide by zero.")
+        return None
+
+result_divide = divide(100, 5)
+print(f"The quotient of 100 divided by 5 is {result_divide}")
